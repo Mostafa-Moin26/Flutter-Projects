@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
   int _calculateGridColumns(BuildContext context, Orientation orientation) {
     final screenWidth = MediaQuery.of(context).size.width;
     if (orientation == Orientation.landscape) {
-      return screenWidth > 1200 ? 4 : 3;
+      return screenWidth > 1200 ? 4 : 4;
     } else {
       return 2;
     }
