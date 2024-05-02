@@ -24,13 +24,25 @@ class DetailsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 80,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.white,
+        leadingWidth: 80,
+        leading: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Container(
+            height: 20,
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 112, 208, 77),
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+                size: 40,
+                color: Colors.white,
+              ),
+            ),
           ),
         ),
         title: Text(

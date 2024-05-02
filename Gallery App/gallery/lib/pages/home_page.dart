@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gallery/pages/details_page.dart';
 import 'package:gallery/util/image_data.dart';
 
@@ -12,11 +13,16 @@ class HomePage extends StatelessWidget {
       // backgroundColor: Color.fromARGB(255, 50, 188, 4),
       appBar: AppBar(
         toolbarHeight: 80,
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.white,
+        leadingWidth: 80,
+        leading: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: Color.fromARGB(255, 112, 208, 77),
+            ),
+            child: const Icon(Icons.arrow_back_ios_new_rounded,
+                color: Colors.white, size: 40),
           ),
         ),
         title: const Text(
