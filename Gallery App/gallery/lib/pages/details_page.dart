@@ -23,14 +23,14 @@ class DetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 80,
-        leadingWidth: 80,
+        toolbarHeight: 70,
+        leadingWidth: 70,
         leading: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Container(
-            height: 20,
+            margin: const EdgeInsets.all(2.0),
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 112, 208, 77),
+             color: const Color(0xFF7ACA5E),
               borderRadius: BorderRadius.circular(15),
             ),
             child: IconButton(
@@ -39,7 +39,7 @@ class DetailsPage extends StatelessWidget {
               },
               icon: const Icon(
                 Icons.arrow_back_ios_new_rounded,
-                size: 40,
+                size: 30,
                 color: Colors.white,
               ),
             ),

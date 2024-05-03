@@ -12,17 +12,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       // backgroundColor: Color.fromARGB(255, 50, 188, 4),
       appBar: AppBar(
-        toolbarHeight: 80,
-        leadingWidth: 80,
+        toolbarHeight: 70,
+        leadingWidth: 70,
         leading: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Container(
+            margin: EdgeInsets.all(2),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              color: Color.fromARGB(255, 112, 208, 77),
+              color: const Color(0xFF7ACA5E),
             ),
             child: const Icon(Icons.arrow_back_ios_new_rounded,
-                color: Colors.white, size: 40),
+                color: Colors.white, size: 30),
           ),
         ),
         title: const Text(
